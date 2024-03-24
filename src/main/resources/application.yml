@@ -1,0 +1,20 @@
+spring:
+#  profiles:
+#    active: ${SPRING_PROFILES_ACTIVE:dev}
+  application:
+    name: factorial_microservice
+server:
+  port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus,metrics
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+app:
+  factorial:
+    max-value: 100
