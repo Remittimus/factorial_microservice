@@ -1,6 +1,6 @@
 spring:
-#  profiles:
-#    active: ${SPRING_PROFILES_ACTIVE:dev}
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
   application:
     name: factorial_microservice
 server:
@@ -17,4 +17,10 @@ management:
 
 app:
   factorial:
-    max-value: 100
+    max-value: ${FACTORIAL_CACHE_SIZE:100}
+
+logging:
+  file:
+    name: logs/app.log
+  level:
+    root: INFO
