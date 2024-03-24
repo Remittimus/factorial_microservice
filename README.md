@@ -36,3 +36,7 @@
 ```bash
 mvn clean install spring-boot:build-image
 ```
+Быстрый старт с имеющимся image:
+```bash
+docker-compose -f .\docker-compose.yml up
+```
