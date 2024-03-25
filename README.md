@@ -32,6 +32,10 @@ docker-compose -f docker-compose.yml up
 ```bash
 ./mvnw clean install
 ```
+Также подключен плагин для сборки сразу в image:
+```bash
+./mvnw spring-boot:build-image
+```
 ## Endpoints
 - /actuator/health
 - /actuator/prometheus
