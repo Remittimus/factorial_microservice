@@ -24,7 +24,7 @@
 - Java 17
 - Spring Boot 3.2.4
 ## Build  
-В pom.xml плагин на билд сразу в докер образ
+В pom.xml плагин на билд сразу в docker image:
 ```bash
 mvn clean install spring-boot:build-image
 ```
