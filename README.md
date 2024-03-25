@@ -24,13 +24,17 @@
 - Java 17
 - Spring Boot 3.2.4
 ## Build  
-В pom.xml плагин на билд сразу в docker image:
+Быстрый старт (сборка mvn будет осуществлена в контейнере):
+```bash
+docker-compose -f docker-compose.yml up
+```
+Если нужно просто собрать приложение и у вас есть java 17:
 ```bash
 ./mvnw clean install
 ```
-Быстрый старт с имеющимся image:
+Также подключен плагин для сборки сразу в image:
 ```bash
-docker-compose -f .\docker-compose.yml up
+./mvnw spring-boot:build-image
 ```
 ## Endpoints
 - /actuator/health
