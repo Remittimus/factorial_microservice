@@ -26,7 +26,7 @@
 ## Build  
 В pom.xml плагин на билд сразу в docker image:
 ```bash
-mvn clean install spring-boot:build-image
+./mvnw clean install
 ```
 Быстрый старт с имеющимся image:
 ```bash
