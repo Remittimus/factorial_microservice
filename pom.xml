@@ -10,7 +10,7 @@
     </parent>
     <groupId>test</groupId>
     <artifactId>factorial_microservice</artifactId>
-    <version>0.0.1</version>
+    <version>latest</version>
     <name>factorial_microservice</name>
     <description>factorial_microservice</description>
     <properties>
@@ -57,11 +57,11 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${project.parent.version}</version>
                 <executions>
-                    <execution>
-                        <goals>
-                            <goal>build-image</goal>
-                        </goals>
-                    </execution>
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>build-image</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
                 </executions>
                 <configuration>
                     <jvmArguments>
